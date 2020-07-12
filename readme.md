@@ -83,7 +83,7 @@
 
 #### 簡介
 
-前端使用 React，部署在 github，串接 RESTful api
+前端使用 React，部署在 github，串接<a src="https://github.com/edinliu/my-website-source-code/blob/master/src/lib/apiUrl.js">RESTful api</a>
 後端使用 NodeJS 與 Express.js 開發的 RESTful API，部署在 heroku
 
 1. **<a href="https://github.com/edinliu/my-website-source-code/tree/master/src/pages/MessageBoard">前端</a>**
