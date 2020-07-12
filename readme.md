@@ -17,9 +17,9 @@
 
 組件用 typescript 製作的 todolist
 
-# 製作過程
+#### 製作過程
 
-### 製作 component 的 ui 部分:
+##### 製作 component 的 ui 部分:
 
 - InputAndSubmit: 輸入框與按鈕，用來輸入 todo
 - TodoFilterPannel: 三個按鈕，用來切換顯示模式，有 show all、show todo、show done 三種。
@@ -27,7 +27,7 @@
 - TodoList: 包含數個 TodoItem
 - TodoApp: 包含上述組件
 
-### 製作 component 的 state 部分:
+##### 製作 component 的 state 部分:
 
 - InputAndSubmit: 1 個 state，用 onChange 來讓它的 input value 與 state 雙向綁定
 - TodoApp:3 個 state
@@ -39,7 +39,7 @@
 3. filter
    filter 的值有'all'、'done'、'todo'三種。傳遞給 TodoItem 讓它去顯示或隱藏自己的 list item。
 
-### 在過程中遇到的困難
+##### 在過程中遇到的困難
 
 - 一開始想要直接在 TodoItem 接收到的閉包函式中直接 讀取 todoListState ，並用 setState 更改值。然而只能讀取到 onClick 創建當下的 todoListState。
   解決方法是使用 useEffect。useEffect 會在每次執行時更新函式，可以保證取得最新的值。
