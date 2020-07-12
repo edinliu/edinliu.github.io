@@ -64,7 +64,7 @@
 2. **<a href="https://github.com/edinliu/my-website-source-code/blob/master/webpack/styles/styleProdRules.js">使用 PurgeCSS 減少 bundle 大小</a>**
    用 PurgeCSS 刪除多餘的 bootstrap css，bundle 大小減少了 133kb。
 
-3. **<a href="https://github.com/edinliu/my-website-source-code/blob/master/src/components/MarkdownViewer.js">編譯 markdown</a>**
+3. **<a href="https://github.com/edinliu/my-website-source-code/blob/master/src/components/MarkdownViewer.jsx">編譯 markdown</a>**
    用 marked.js 將這個 readme.md 的內容顯示到個人網站中。
 
 ##### 使用的工具
@@ -77,7 +77,7 @@
 
 <hr style='page-break-before:always'>
 
-### 作品 3: 留言板 [demo](https://edinliu.github.io/message_board) [原始碼](https://github.com/edinliu/express-message-board-api)
+### 作品 3: 留言板 [demo](https://edinliu.github.io/message_board.html) [原始碼](https://github.com/edinliu/my-website-source-code/tree/master/src/pages/MessageBoard)
 
 <img src="https://edinliu.github.io/images/preview_message_board.png" alt="site1" width="50%"/>
 
@@ -88,7 +88,7 @@
 
 1. **<a href="https://github.com/edinliu/my-website-source-code/tree/master/src/pages/MessageBoard">前端</a>**
    前端部屬在 github page，串接 Restful API
-2. **<a href="https://github.com/edinliu/my-website-source-code/blob/master/webpack/plugins/HtmlWebpackPlugin.js">靜態頁面</a>**
+2. **<a href="https://github.com/edinliu/my-website-source-code/blob/master/webpack/assets/html.js">靜態頁面</a>**
    message_board 頁面是用 react 做的一個組件，使用 react-router-dom 做頁面的切換。由於 github page 沒有伺服器渲染，重新整理頁面、或者是分享連結時會出錯，所以用 html webpack plugin 複製一份 index.html 在 public 資料夾並且更名為 message_board，問題就解決了。
 3. **<a href="https://github.com/edinliu/express-message-board-api">後端</a>**
    使用 Express.js 框架，部屬在 heroku。資料儲存方面使用 fs 去對 json 檔案做讀寫，但是過一陣子留言的資料會消失。heroku 官網說他們伺服器關閉資料不會儲存，而且每天會重新啟動。之後會考慮串接資料庫去儲存資料。
@@ -100,7 +100,7 @@
 3. Express.js
 <hr style='page-break-before:always'>
 
-### 作品 4: Redux Counter [demo](https://edinliu.github.io/redux-counter/) [原始碼](https://github.com/edinliu/redux-counter-source-code)
+### 作品 4: Redux Counter [demo](https://edinliu.github.io/redux-counter/index.html) [原始碼](https://github.com/edinliu/redux-counter-source-code)
 
 <img src="https://edinliu.github.io/redux-counter/images/snapshot.png" alt="site1" width="50%"/>
 
@@ -111,7 +111,7 @@
 1. Redux
 2. React
 
-### 作品 5: 登陸頁面 [demo](https://edinliu.github.io/landing_page/) [原始碼](https://github.com/edinliu/landing_page)
+### 作品 5: 登陸頁面 [demo](https://edinliu.github.io/landing_page/index.html) [原始碼](https://github.com/edinliu/landing_page)
 
 <img src="https://edinliu.github.io/images/preview_landing_page.jpg" alt="site1" width="50%"/>
 
