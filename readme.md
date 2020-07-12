@@ -83,11 +83,11 @@
 
 #### 簡介
 
-前端使用 React，部署在 github，串接<a src="https://github.com/edinliu/my-website-source-code/blob/master/src/lib/apiUrl.js">RESTful api</a>
+前端使用 React，部署在 github，串接 RESTful api
 後端使用 NodeJS 與 Express.js 開發的 RESTful API，部署在 heroku
 
 1. **<a href="https://github.com/edinliu/my-website-source-code/tree/master/src/pages/MessageBoard">前端</a>**
-   前端部屬在 github page，串接 <a src="https://github.com/edinliu/my-website-source-code/blob/master/src/lib/apiUrl.js">Restful API</a>
+   前端部屬在 github page，串接 Restful API
 2. **<a href="https://github.com/edinliu/my-website-source-code/blob/master/webpack/plugins/HtmlWebpackPlugin.js">靜態頁面</a>**
    message_board 頁面是用 react 做的一個組件，使用 react-router-dom 做頁面的切換。由於 github page 沒有伺服器渲染，重新整理頁面、或者是分享連結時會出錯，所以用 html webpack plugin 複製一份 index.html 在 public 資料夾並且更名為 message_board，問題就解決了。
 3. **<a href="https://github.com/edinliu/express-message-board-api">後端</a>**
