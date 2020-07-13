@@ -66,6 +66,8 @@
 
 3. **<a href="https://github.com/edinliu/my-website-source-code/blob/master/src/components/MarkdownViewer.jsx">編譯 markdown</a>**
    用 marked.js 將這個 readme.md 的內容顯示到個人網站中。
+4. **<a href="https://github.com/edinliu/my-website-source-code/tree/master/src/serviceWorker.js">PWA</a>**
+   使用從 create-react-app 複製來的 serviceWorker.js 製作 PWA
 
 ##### 使用的工具
 
