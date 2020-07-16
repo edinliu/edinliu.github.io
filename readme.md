@@ -9,7 +9,7 @@
 <h2 align="center">作品介紹</h2>
 </div>
 
-### 作品 1: Todo List [demo](https://edinliu.github.io/ts-todolist-demo/) [原始碼](https://github.com/edinliu/ts-todolist-source-code)
+### 作品 1: Todo List [demo](https://edinliu.github.io/ts-todolist-demo/index.html) [原始碼](https://github.com/edinliu/ts-todolist-source-code)
 
 <img src="https://i.imgur.com/II2Jx3H.png" alt="site1" width="50%"/>
 
