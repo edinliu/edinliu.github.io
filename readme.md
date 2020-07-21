@@ -15,40 +15,9 @@
 
 #### 簡介
 
-組件用 typescript 製作的 todolist
+這是使用 typescript 製作的 Todo List，用 firebase 實作登入登出、資料儲存的功能。
 
-#### 製作過程
-
-##### 製作 component 的 ui 部分:
-
-- InputAndSubmit: 輸入框與按鈕，用來輸入 todo
-- TodoFilterPannel: 三個按鈕，用來切換顯示模式，有 show all、show todo、show done 三種。
-- TodoItem: 一個可以被點擊的 list item，按下之後會有刪除線。其接收一個閉包函式去記錄當下的 todoListState.length，於被點擊時回傳給父祖件。
-- TodoList: 包含數個 TodoItem
-- TodoApp: 包含上述組件
-
-##### 製作 component 的 state 部分:
-
-- InputAndSubmit: 1 個 state，用 onChange 來讓它的 input value 與 state 雙向綁定
-- TodoApp:3 個 state
-
-1. todoListState:
-   預設值是空陣列，儲存整個 todo list 的資料
-2. whichTodoItemClick:
-   預設值是 null，當 TodoItem 被按下時，會用該 TodoItem 的 id 修改這個 state，useEffect 偵測到這個 state 的改變後，會修改 todoListState 內該 id 的 isDone。
-3. filter
-   filter 的值有'all'、'done'、'todo'三種。傳遞給 TodoItem 讓它去顯示或隱藏自己的 list item。
-
-##### 在過程中遇到的困難
-
-- 一開始想要直接在 TodoItem 接收到的閉包函式中直接 讀取 todoListState ，並用 setState 更改值。然而只能讀取到 onClick 創建當下的 todoListState。
-  解決方法是使用 useEffect。useEffect 會在每次執行時更新函式，可以保證取得最新的值。
-
-### 未來目標
-
-想要使用 google firebase 的身分驗證 api 與 firestore，替 todo list 增加登入功能。
-
-<hr style='page-break-before:always'>
+<hr>
 
 ### 作品 2: 個人網站 [demo](https://edinliu.github.io/index.html) [原始碼](https://github.com/edinliu/my-website-source-code)
 
@@ -68,14 +37,6 @@
    用 marked.js 將這個 readme.md 的內容顯示到個人網站中。
 4. **<a href="https://github.com/edinliu/my-website-source-code/tree/master/src/serviceWorker.js">PWA</a>**
    使用從 create-react-app 複製來的 serviceWorker.js 製作 PWA
-
-##### 使用的工具
-
-1. React.js
-2. PurgeCSS
-3. Styled Jsx
-4. Bootstrap
-5. Webpack
 
 <hr style='page-break-before:always'>
 
